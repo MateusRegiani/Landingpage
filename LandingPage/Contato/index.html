@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+<body>
+
+    <h2>Formulário de Contato</h2>
+
+    <form>
+
+        <!-- Nome -->
+        <label>Nome completo:</label><br>
+        <input type="text" name="nome" required><br><br>
+
+        <!-- Telefone -->
+        <label>Telefone:</label><br>
+        <input type="tel" name="telefone" required><br><br>
+
+        <!-- Email -->
+        <label>E-mail:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <!-- Tipo de pessoa -->
+        <label>Tipo de pessoa:</label><br>
+        <input type="radio" name="tipo" value="fisica"> Pessoa Física<br>
+        <input type="radio" name="tipo" value="juridica"> Pessoa Jurídica<br><br>
+
+        <!-- Melhor horário -->
+        <label>Melhor horário de contato:</label><br>
+        <select name="horario">
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+        </select><br><br>
+
+        <!-- Tipo de serviço -->
+        <label>Tipo de serviço desejado:</label><br>
+        <input type="checkbox" name="servico" value="site"> Criação de site<br>
+        <input type="checkbox" name="servico" value="manutencao"> Manutenção<br>
+        <input type="checkbox" name="servico" value="suporte"> Suporte técnico<br><br>
+
+        <!-- Descrição -->
+        <label>Descreva o que deseja:</label><br>
+        <textarea name="descricao" rows="5" cols="40"></textarea><br><br>
+
+        <!-- Botão -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
